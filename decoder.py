@@ -48,8 +48,8 @@ class Decoder(torch.nn.Module):
         # converting each vector of length hidden_dim to length of output_dim (TimeDistributed Layer)
         outputs_numer = torch.zeros(outputs.shape[0], outputs.shape[1], self.output_dim)
 
-        for i in range(outputs.shape[0]):
-            outputs_numer[i] = self.linear_out(outputs[i])
+        for i in range(outputs.shape[1]):
+            outputs_numer[:, i, :] = self.linear_out(outputs[:, i, :])
         
         return outputs_numer
 

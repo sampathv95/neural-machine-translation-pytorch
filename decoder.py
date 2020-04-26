@@ -54,6 +54,7 @@ class Decoder(torch.nn.Module):
         return outputs_numer
 
 if __name__ == '__main__':
+    # testing
     dec = Decoder(n_layers=2, embedding_dim=256, output_dim=1000, hidden_dim=64, dropout=0.2)
     dec_out = dec(torch.zeros(128, 10, dtype=torch.long), torch.zeros(2, 128, 64, dtype=torch.float32), torch.zeros(2, 128, 64, dtype=torch.float32))
     print(dec_out)

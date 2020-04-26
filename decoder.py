@@ -49,6 +49,7 @@ class Decoder(torch.nn.Module):
         outputs_numer = torch.zeros(outputs.shape[0], outputs.shape[1], self.output_dim)
 
         for i in range(outputs.shape[1]):
+            # converting batch of vectors by linear layer
             outputs_numer[:, i, :] = self.linear_out(outputs[:, i, :])
         
         return outputs_numer

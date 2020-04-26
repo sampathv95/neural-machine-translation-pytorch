@@ -32,7 +32,7 @@ class Decoder(torch.nn.Module):
             self.dropout_layer = torch.nn.Dropout(self.dropout_ratio)
 
         
-    def forward(self, inputs):
+    def forward(self, inputs, hidden_states, cell_states):
         # inputs = (batch_size, trg_len)
 
         embedding_out = self.embedding_layer(inputs)
@@ -40,7 +40,7 @@ class Decoder(torch.nn.Module):
             embedding_out = self.dropout_layer(embedding_out)
         # embedding_out = (batch_size, embedding_dim)
 
-        outputs, (hidden_states, cell_states) = self.lstm(embedding_out)
+        outputs, (hidden_states, cell_states) = self.lstm(embedding_out, (hidden_states, cell_states))
         # outputs = (batch_size, src_len, hidden_dim)
         # hidden_states = (batch_size, n_layers, hidden_dim)
         # cell_states = (batch_size, b_layers, hidden_dim)
@@ -54,12 +54,10 @@ class Decoder(torch.nn.Module):
         return outputs_numer
 
 if __name__ == '__main__':
-    # testing
     dec = Decoder(n_layers=2, embedding_dim=256, output_dim=1000, hidden_dim=64, dropout=0.2)
-    dec_out = dec(torch.zeros(5, 3, dtype=torch.long))
+    dec_out = dec(torch.zeros(128, 10, dtype=torch.long), torch.zeros(2, 128, 64, dtype=torch.float32), torch.zeros(2, 128, 64, dtype=torch.float32))
     print(dec_out)
     print(dec_out.shape)
-
 
 
 

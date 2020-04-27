@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3d95dbe-8621-4925-80dd-2c59a9ef9072" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/decoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/decoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +30,29 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.decoder">
+    <configuration name="decoder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nmt-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/decoder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="encoder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nmt-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,6 +77,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.decoder" />
         <item itemvalue="Python.encoder" />
       </list>
     </recent_temporary>
@@ -72,7 +95,7 @@
       <workItem from="1587860028718" duration="1384000" />
       <workItem from="1587868564231" duration="756000" />
       <workItem from="1587869482775" duration="70000" />
-      <workItem from="1587928238757" duration="440000" />
+      <workItem from="1587928238757" duration="636000" />
     </task>
     <servers />
   </component>
@@ -84,22 +107,22 @@
       <screen x="0" y="23" width="1920" height="984" />
     </state>
     <state x="849" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.984@0.23.1920.984" timestamp="1587868587383" />
-    <state width="1016" height="264" key="GridCell.Tab.0.bottom" timestamp="1587869552759">
+    <state width="1016" height="430" key="GridCell.Tab.0.bottom" timestamp="1587928875613">
       <screen x="0" y="23" width="1920" height="984" />
     </state>
-    <state width="1016" height="264" key="GridCell.Tab.0.bottom/0.23.1920.984@0.23.1920.984" timestamp="1587869552759" />
-    <state width="1016" height="264" key="GridCell.Tab.0.center" timestamp="1587869552759">
+    <state width="1016" height="430" key="GridCell.Tab.0.bottom/0.23.1920.984@0.23.1920.984" timestamp="1587928875613" />
+    <state width="1016" height="430" key="GridCell.Tab.0.center" timestamp="1587928875612">
       <screen x="0" y="23" width="1920" height="984" />
     </state>
-    <state width="1016" height="264" key="GridCell.Tab.0.center/0.23.1920.984@0.23.1920.984" timestamp="1587869552759" />
-    <state width="1016" height="264" key="GridCell.Tab.0.left" timestamp="1587869552759">
+    <state width="1016" height="430" key="GridCell.Tab.0.center/0.23.1920.984@0.23.1920.984" timestamp="1587928875612" />
+    <state width="1016" height="430" key="GridCell.Tab.0.left" timestamp="1587928875611">
       <screen x="0" y="23" width="1920" height="984" />
     </state>
-    <state width="1016" height="264" key="GridCell.Tab.0.left/0.23.1920.984@0.23.1920.984" timestamp="1587869552759" />
-    <state width="1016" height="264" key="GridCell.Tab.0.right" timestamp="1587869552759">
+    <state width="1016" height="430" key="GridCell.Tab.0.left/0.23.1920.984@0.23.1920.984" timestamp="1587928875611" />
+    <state width="1016" height="430" key="GridCell.Tab.0.right" timestamp="1587928875612">
       <screen x="0" y="23" width="1920" height="984" />
     </state>
-    <state width="1016" height="264" key="GridCell.Tab.0.right/0.23.1920.984@0.23.1920.984" timestamp="1587869552759" />
+    <state width="1016" height="430" key="GridCell.Tab.0.right/0.23.1920.984@0.23.1920.984" timestamp="1587928875612" />
     <state x="1105" y="239" width="670" height="676" key="search.everywhere.popup" timestamp="1587865784640">
       <screen x="0" y="23" width="1920" height="984" />
     </state>
@@ -107,5 +130,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/nmt_pytorch$encoder.coverage" NAME="encoder Coverage Results" MODIFIED="1587869522204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nmt_pytorch$decoder.coverage" NAME="decoder Coverage Results" MODIFIED="1587928753220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
